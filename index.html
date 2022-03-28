@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration </title>
+
+    <style>
+      .container{
+          margin: auto;
+          padding: 5px;
+          background:rgb(188 221 199);
+          width: 500px;
+      }
+      label, input{
+          margin: 10px;
+      }
+      #id{
+        text-align: center;
+        color:#f9f9f9; 
+        background-color:black
+      }
+      .reg{
+          text-align: center;
+      }
+      .form_input{
+          padding: 5px;
+          border: none;
+      }
+      #btn{
+          background:rgb(5, 155, 12);
+          color: #f9f9f9;
+          padding: 10px;
+          font-weight: bold;
+          border: none;
+      }
+      .row{
+          width: 100%;
+          height: 40px;
+      }
+      .col{
+          width: 45%;
+          float: left;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Registration here</p>
+
+        <h1>User Registreation</h1>
+
+        <form class="reg" action="" method="post">
+
+            <div class="row">
+            <label class="col" for="fname">First Name</label>
+            <input class="col form_input" type="text" name="fname" placeholder="First name"> <br> 
+            </div>
+
+            <div class="row">
+                <label class="col" for="lname">Last Name</label>
+                <input class="col form_input" type="text" name="lname" placeholder="Last name">  <br>
+            </div>
+            <div class="row">
+                <label class="col" for="phone">Phone</label>
+                <input class="col form_input" type="text" name="phone" placeholder="phone"> <br>
+            </div>
+
+            <div class="row">
+            <label class="col" for="gender">Gender</label>
+            <div class="col form_input"> 
+
+                <input type="radio" name="gender" value="male">
+                <label for="gender">Male</label>
+    
+                <input type="radio" name="gender" value="female">
+                <label for="gender">Female</label><br>
+            </div>
+            </div>
+
+            <div class="row">
+                <label class="col" for="Address">Address</label>
+                <input class="col form_input" name="address" placeholder="address">
+            </div>
+
+            <div class="row">
+            <label  class="col" for="city">City</label>
+            <input class="col form_input" type="text" name="city" placeholder="city"><br>
+            </div>
+
+            <div class="row">
+            <label class="col" for="state">State</label>
+            <input class="col form_input" type="text" name="state" placeholder="state"><br>
+            </div>
+
+            <div class="row">
+            <label class="col" for="country">Country</label>
+            <input class="col form_input" type="email" name="country" placeholder="country"><br> 
+            </div>
+
+            <div class="row">
+            <label class="col" for="pin">PIN</label>
+            <input class="col" type="number" name="pin" placeholder="PIN"> <br>
+            </div>
+            
+            <input type="button" id="btn" value="Submit"/>
+            
+
+        </form>
+        
+    </div>
+    
+</body>
+</html>
